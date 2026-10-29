@@ -97,6 +97,18 @@ html.js .reveal.visible {
   transform: none;
 }
 
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+html.js .reveal.visible .stagger-item {
+  animation: rise 0.5s ease-out backwards;
+  animation-delay: calc(var(--step, 0) * 70ms + 150ms);
+}
+
 @media (min-width: 768px) {
   .section {
     padding-top: var(--space-xxl);
