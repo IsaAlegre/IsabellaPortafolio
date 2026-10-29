@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://res.cloudinary.com/dbcnfq9bi/image/upload/v1779920454/profile1_zpwskj.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Pixelify+Sans:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
@@ -21,6 +21,7 @@
   <script type="module" src="js/main.js"></script>
 </head>
 <body>
+  <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
   <header class="site-nav">
     <div class="container site-nav__bar">
       <a class="brand" href="#hero">~/isa.dev ✦</a>
@@ -43,7 +44,7 @@
   </header>
 
   <section class="hero" id="hero">
-    <canvas class="hero__canvas" id="starfield" aria-hidden="true"></canvas>
+    <canvas class="hero__terrain" id="terrain" aria-hidden="true"></canvas>
     <div class="cursor-dot" id="cursor-dot"></div>
     <div class="cursor-ring" id="cursor-ring"></div>
     <div class="container hero__inner">
